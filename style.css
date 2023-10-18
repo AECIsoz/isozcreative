@@ -1,0 +1,371 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* Base */
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Aboreto', cursive;
+}
+
+h1 {
+    font-size: 7rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+h5 {
+    font-size: 1.3rem;
+    padding: 1rem;
+    font-style: italic;
+}
+
+p,
+li,
+.mail {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+a {
+    color: black;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.primary-bg {
+    background-color: #FAF8EB;
+}
+
+/* Layout */
+
+.l_wrapper {
+    display: flex;
+    width: 90%;
+    margin: 3rem auto;
+}
+
+.l_footer {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #75704B;
+    margin: 0 auto;
+    padding: 3rem 10rem;
+}
+
+/* Modules */
+
+.main {
+    margin-top: 3rem;
+    padding: 2rem;
+    position: relative;
+}
+
+.main-left {
+    width: 45%;
+    border-right: 1px solid #75704B;
+}
+
+.main-left-text {
+    width: 75%;
+}
+
+.main-right {
+    width: 55%;
+}
+
+.nav-list,
+.sub-nav-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.nav-list-item {
+    font-size: 7rem;
+}
+
+.nav-link, .sub-nav-link {
+    text-decoration: none;
+}
+
+.logo {
+    display: flex;
+}
+
+.mobile-image {
+    display: none;
+}
+
+.desktop-image {
+    width: 200px;
+    height: 200px;
+}
+/* styling undersidorna header */
+.sub {
+    display: flex;
+    margin-top: 3rem;
+}
+
+.sub-left {
+    width: 30%;
+    border-right: 1px solid #75704B;
+}
+
+.sub-right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 2rem;
+}
+
+.container {
+    display: flex;
+}
+
+.contrasting-style {
+    width: 50%;
+    border: 1px dotted #C2C0B6;
+    box-shadow: 2px 2px 2px #75704B;
+    padding: 3rem;
+    margin: 0 2rem 2rem 0;
+}
+
+.sub-list {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+
+.illustration {
+    margin: 0 auto;
+}
+
+.mail {
+    text-decoration: none;
+}
+
+/* State */
+
+.nav-link:hover, .sub-nav-link:hover {
+    color: #75704B;
+    transition: all 1s;
+    font-size: 6rem;
+}
+
+/* Media queries */
+@media only screen and (max-width: 1350px) {
+    .nav-list-item {
+        font-size: 5.5rem;
+    }
+
+    .sub-nav-link:hover {
+        font-size: 5rem;
+    }
+}
+
+@media only screen and (max-width: 1120px) {
+
+    .main-left-text {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    .nav-list-item {
+        font-size: 4rem;
+    }
+
+    .nav-link:hover {
+        font-size: 5rem;
+    }
+
+    .sub-nav-link:hover {
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .main-left {
+        width: 70%;
+    }
+
+    .main-right {
+        width: 30%;
+    }
+
+    .nav-list {
+        padding: 0;
+    }
+
+    .nav-list-item {
+        font-size: 2rem;
+    }
+
+    .nav-link:hover {
+        font-size: 3.5rem;
+    }
+
+    .sub-left {
+        width: 40%;
+    } 
+
+    .sub-right {
+        width: 60%;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .contrasting-style {
+        width: 90%;
+    }
+
+    .logo {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+    h1 {
+        margin-bottom: 1rem;
+    }
+
+    .l_wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .main {
+        margin-top: 1rem;
+    }
+
+    .main-left,
+    .main-right,
+    .nav-list {
+        width: 100%;
+    }
+
+    .main-left {
+        border: none;
+    }   
+
+    .main-left-text {
+        width: 100%;
+    }
+
+    .nav-list-item {
+        font-size: 2rem;
+        margin-right: 2rem;
+    }
+
+    .nav-link:hover {
+        font-size: 2rem;
+        font-style: italic;
+    }
+
+    .sub {
+        flex-direction: column;
+    }
+
+    .sub-right,
+    .sub-left {
+        width: 100%;
+    }
+
+    .sub-left {
+        display: flex;
+        justify-content: space-between;
+        border-right: none;
+        margin-right: 2rem;
+    }
+
+    .nav-list, .sub-nav-list {
+        align-items: flex-end;
+        line-height: 0.2rem;
+    }
+
+    .sub-nav-list {
+        padding-right: 4rem;
+    }
+
+    .desktop-image {
+        display: none;
+    }
+
+    .mobile-image {
+        width: 100px;
+        height: 100px;
+        margin-left: 3rem;
+    }
+
+    .sub-nav-link {
+        font-size: 1.6rem;
+    }
+    .sub-nav-link:hover {
+        font-size: 1.6rem;
+        font-style: italic;
+    }
+}
