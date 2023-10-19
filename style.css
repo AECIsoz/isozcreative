@@ -196,8 +196,19 @@ ul li {
     margin-top: 1rem;
 }
 
-.illustration {
+.illustration  {
     margin: 0 auto;
+}
+
+.portrait {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portrait img {
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px lightslategray;
 }
 
 .mail {
@@ -264,7 +275,7 @@ ul li {
     }
 
     .nav-link:hover {
-        font-size: 3.5rem;
+        font-size: 2.5rem;
     }
 
     .sub-left {
@@ -283,8 +294,9 @@ ul li {
         width: 90%;
     }
 
-    .logo {
-        display: block;
+    .desktop-image {
+        width: 100px;
+        height: 100px;
     }
 }
 
@@ -356,6 +368,7 @@ ul li {
     }
 
     .mobile-image {
+        display: block;
         width: 100px;
         height: 100px;
         margin-left: 3rem;
