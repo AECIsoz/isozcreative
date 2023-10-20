@@ -97,6 +97,24 @@ ul li {
     background-color: #FAF8EB;
 }
 
+button {
+    border: none;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px lightslategray;
+    padding: 6px;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+button a {
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+button a:visited {
+    color: black;
+}
+
 /* Layout */
 
 .l_wrapper {
@@ -161,6 +179,7 @@ ul li {
     width: 200px;
     height: 200px;
 }
+
 /* styling undersidorna header */
 .sub {
     display: flex;
